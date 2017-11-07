@@ -24,11 +24,12 @@ actualanswer=num1*num2
 
 print("What is ",num1," x ", num2, "?")
 
-myanswer = input( 'What is your answer? '  ) 
+myanswer = int(input( 'What is your answer? '  ) )
 
 #this tests  if your answer is right if 
 if myanswer==actualanswer:
-    print('Correct!')
+
+      print('Correct!')
 else:
     print('rwong')
     if myanswer>actualanswer:
@@ -43,13 +44,13 @@ else:
 
 
 
-num1=randint(1, 10)  # Integer from 1 to 10, endpoints included
+num1=randint(1, 10)  # Integer from 0 to 1
 num2=randint(1, 10)  # Integer from 1 to 10, endpoints included
 actualanswer=num1*num2
 
 print("What is ",num1," + ", num2, "?")
 actualanswer=num1+num2
-myanswer = input( 'What is your answer? '  ) 
+myanswer = int( input( 'What is your answer? '  ) )
 
 #this tests  if your answer is right if 
 if myanswer==actualanswer:
@@ -73,7 +74,7 @@ actualanswer=num1*num2
 
 print("What is ",num1," - ", num2, "?") 
 actualanswer=num1-num2
-myanswer = input( 'What is your answer? '  ) 
+myanswer =int( input( 'What is your answer? '  )) 
 
 #this tests  if your answer is right if 
 if myanswer==actualanswer:
