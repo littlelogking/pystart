@@ -2,7 +2,7 @@
 """
 Created on Tue Sep 12 18:13:36 2017
 
-@author: louis
+@author: louis griffiths
 """
 
 #This program will draw an alien
@@ -11,6 +11,9 @@ from tkinter import *
 
 HEIGHT=500
 WIDTH=800
+
+
+
 
 
 def move_robot(event):
@@ -26,7 +29,6 @@ def move_robot(event):
     elif event.keysym == 'd':
        c.move(robot_id, ROBOT_SPD,0)
 #       c.move(robot_id2, 0, ROBOT_SPD)
-
 
 
 
@@ -52,6 +54,10 @@ ROBOT_SPD = 10
     
 c.bind_all('<Key>',move_robot)
 window.mainloop(0)
+
+
+
+
 #you can change the colours by changing fill='blue'or whatever the colour is 
 #this was from a book by carrel vordeman 
 #this program dosn't work till finished  

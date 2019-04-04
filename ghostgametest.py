@@ -17,11 +17,11 @@ feeling_brave = True
 score = 0
 
 while feeling_brave:
-    ghost_door = randint(1, 3)   
-    print('three doors ahead...')    
-    print('a ghost behind one .')    
+    safe_door = randint(1, 10)   
+    print('ten doors ahead...')    
+    print('a ghost behind nine .')    
     print('which door do you open?'  )
-    door = input( ' 1, 2, or 3? '  ) 
+    door = input( ' 1, 2, 4, 5, 6, 7, 8, 9, 10 or 3? '  ) 
     door_num = int(door) 
     if door_num == ghost_door:
         print( 'GHOST!')
