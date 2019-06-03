@@ -13,10 +13,19 @@ import sys
 
 #FIXME
 
+def feelingbrave():
+     print('Are you feeling brave?:')
+     fbrave=input('y/n ')
+     if fbrave =="n":
+        feeling_brave=False
+        print(str(scoref(score))) 
+     return feeling_brave
+    
 
 
-def scoref():
-    result = score
+
+def scoref(score):
+    result = score+1
     return result
 
 def ghostdoor(score):
@@ -31,7 +40,7 @@ def safedoor(score):
     print('Move on to the next room')
     return score
 
-def newhighscore(highscore):
+def newhighscore(score, highscore):
     if score > highscore:
         highscore = score 
         print ("well done you have set the new high score with a score of", highscore)
@@ -61,24 +70,20 @@ while feeling_brave:
     print('which door do you open?'  )
     door = input( ' 1, 2, 4, 5, 6, 7, 8, 9, 10 or 3? '  ) 
     door_num = int(door) 
+    feelingbrave()
     
-    if door_num > safe_door:
+    if door_num != safe_door:
         ghostdoor(score)
-        newhighscore(highscore)
+        newhighscore(score, highscore)
         resetscore(score)
-    
-    
-    if door_num < safe_door:
-       ghostdoor(score)
-       newhighscore(highscore)
-       resetscore(score)
-       
-       
-        
+               
     else:
        score=safedoor(score)
        
+      
         
+print(str(scoref(score)))        
+
       
     
         

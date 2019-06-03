@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr  4 16:31:18 2019
+Created on Fri May 10 07:09:47 2019
 
-@author: louis
+@author: suilven
 """
 
-"""
-"""
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.image as mping
@@ -58,7 +56,7 @@ if image == '3':
     stop()
     
 
-print ("which file in pystart is your image in")
+
 
 
 
