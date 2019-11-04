@@ -18,7 +18,9 @@ def feelingbrave():
      fbrave=input('y/n ')
      if fbrave =="n":
         feeling_brave=False
-        print(str(scoref(score))) 
+        print(str(scoref(score)))
+        
+       
      return feeling_brave
     
 
