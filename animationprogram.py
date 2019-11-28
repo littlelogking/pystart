@@ -12,7 +12,7 @@ import math
 import os
 from PIL import Image
 from PIL import ImageDraw
-
+#from PIL import PIL
 #this gets window ready
 window=tk.Tk()
 window.title('Animation')
@@ -44,8 +44,14 @@ shift=20
 shifteye=10
 
 
-for i in range(1,50):
-    image1 = Image.new("RGB", (iwidth, iheight), 'white')
+for i in range(1,4):
+    
+   
+    #https://pillow.readthedocs.io/en/3.1.x/reference/Image.html
+    #image1 = Image.new("RGB", (iwidth, iheight), 'white')
+    image1 = Image.open("animation/mars-landscape-1-1200.jpg")
+    image1.resize([iwidth,iheight], Image.LANCZOS) 
+    
     draw = ImageDraw.Draw(image1)
     draw.line([0,0,(i-1)*150,0],'blue')
     draw.line([0,0,0,(i-1)*165],'red')
